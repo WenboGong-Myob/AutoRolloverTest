@@ -12,9 +12,6 @@ param (
     $package,
 
     [string]
-    $PERFORCEBRANCH,
-
-    [string]
     $branchversion
 )
 
@@ -32,6 +29,5 @@ Write-Output ""
 
 Write-Output "Parameters Input:"
 Write-Output "package: $($package)"
-Write-Output "PERFORCEBRANCH: $($PERFORCEBRANCH)"
 Write-Output "branchversion: $($branchversion)"
 Write-Output ""
