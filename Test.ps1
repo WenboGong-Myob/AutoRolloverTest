@@ -20,14 +20,14 @@ param (
 
 Write-Output "Env Variables:"
 Write-Output "applicationVersion: $($env:applicationVersion)"
-Write-Output "applicationVersion: $($env:version)"
-Write-Output "applicationVersion: $($env:namespace)"
+Write-Output "version: $($env:version)"
+Write-Output "namespace: $($env:namespace)"
 Write-Output ""
 
 Write-Output "Env Variables Input:"
 Write-Output "applicationVersion: $($applicationVersion)"
-Write-Output "applicationVersion: $($version)"
-Write-Output "applicationVersion: $($namespace)"
+Write-Output "version: $($version)"
+Write-Output "namespace: $($namespace)"
 Write-Output ""
 
 Write-Output "Parameters Input:"
