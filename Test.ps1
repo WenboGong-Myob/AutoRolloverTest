@@ -1,33 +1,37 @@
 param (
     [string]
-    $applicationVersion,
+    $env_applicationVersion,
 
     [string]
-    $version,
+    $env_version,
 
     [string]
-    $namespace,
+    $env_namespace,
 
     [string]
-    $package,
+    $param_package,
 
     [string]
-    $branchversion
+    $param_branchversion,
+
+    [string]
+    $param_version
 )
 
-Write-Output "Env Variables:"
-Write-Output "applicationVersion: $($env:applicationVersion)"
-Write-Output "version: $($env:version)"
-Write-Output "namespace: $($env:namespace)"
+Write-Output "Env Variables Read From PowerShell:"
+Write-Output "Env variable applicationVersion: $($env:applicationVersion)"
+Write-Output "Env variable version: $($env:version)"
+Write-Output "Env variable namespace: $($env:namespace)"
 Write-Output ""
 
-Write-Output "Env Variables Input:"
-Write-Output "applicationVersion: $($applicationVersion)"
-Write-Output "version: $($version)"
-Write-Output "namespace: $($namespace)"
+Write-Output "Env Variables Read From Command Line:"
+Write-Output "Env variable applicationVersion: $($env_applicationVersion)"
+Write-Output "Env variable version: $($env_version)"
+Write-Output "Env variable namespace: $($env_namespace)"
 Write-Output ""
 
-Write-Output "Parameters Input:"
-Write-Output "package: $($package)"
-Write-Output "branchversion: $($branchversion)"
+Write-Output "Parameters Read From Command Line:"
+Write-Output "Parameter package: $($param_package)"
+Write-Output "Parameter branchversion: $($param_branchversion)"
+Write-Output "Parameter VERSION: $($param_version)"
 Write-Output ""
